@@ -1,0 +1,71 @@
+Last login: Thu Oct 16 21:20:14 on ttys000
+kamikuborei@kamikubreinoAir ~ % pwd
+/Users/kamikuborei
+kamikuborei@kamikubreinoAir ~ % mkdir git_challenge
+kamikuborei@kamikubreinoAir ~ % cd git_challenge
+kamikuborei@kamikubreinoAir git_challenge % git init
+Initialized empty Git repository in /Users/kamikuborei/git_challenge/.git/
+kamikuborei@kamikubreinoAir git_challenge % touch hello_world.txt              
+kamikuborei@kamikubreinoAir git_challenge % echo "Hello, world!" >> hello_world.txt
+
+dquote> "                    
+Hello, world >> hello_world.txt
+
+
+kamikuborei@kamikubreinoAir git_challenge % echo "Hello, world!" >> hello_world.txt
+dquote> "
+Hello, world >> hello_world.txt
+
+kamikuborei@kamikubreinoAir git_challenge % 
+  [復元日時2025/10/18 21:06:17]
+Last login: Sat Oct 18 21:01:43 on console
+/bin/date: option requires an argument -- r
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+Restored session: 
+kamikuborei@MacBookAir git_challenge % echo "Hello, world" >> hello_world.txt
+
+kamikuborei@MacBookAir git_challenge % cat hello_world.txt
+Hello, world
+kamikuborei@MacBookAir git_challenge % rm hello_world.txt
+kamikuborei@MacBookAir git_challenge % echo 'Hello, world' >> hello_world.txt
+
+kamikuborei@MacBookAir git_challenge % echo 'Hello, world!' >> hello_world.txt
+
+kamikuborei@MacBookAir git_challenge % cat hello_world.txt
+Hello, world
+Hello, world!
+kamikuborei@MacBookAir git_challenge % echo "Hello, world!" >> hello_world.txt
+
+dquote> 
+kamikuborei@MacBookAir git_challenge % echo "Hello, world\!" >> hello_world.txt
+
+kamikuborei@MacBookAir git_challenge % cat hello_world.txt                  
+Hello, world
+Hello, world!
+Hello, world!
+kamikuborei@MacBookAir git_challenge % rm hello_world.txt
+kamikuborei@MacBookAir git_challenge % echo "Hello, world\!" >> hello_world.txt
+
+kamikuborei@MacBookAir git_challenge % cat hello_world.txt
+Hello, world!
+kamikuborei@MacBookAir git_challenge % ls -a
+.		..		.git		hello_world.txt
+kamikuborei@MacBookAir git_challenge % git add hello_world.txt
+kamikuborei@MacBookAir git_challenge % git commit -m "一つ目のコミット"
+[main (root-commit) 5346b52] 一つ目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+kamikuborei@MacBookAir git_challenge % vi hello_world.txt
+kamikuborei@MacBookAir git_challenge % cat hello_world.txt   
+Hello, world!	
+こんにちは、世界！
+kamikuborei@MacBookAir git_challenge % git add hello_world.txt
+kamikuborei@MacBookAir git_challenge % git commit -m "二つ目のコミット"
+[main 6c40515] 二つ目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+kamikuborei@MacBookAir git_challenge % git log --oneline 
+6c40515 (HEAD -> main) 二つ目のコミット
+5346b52 一つ目のコミット
+kamikuborei@MacBookAir git_challenge % ui
